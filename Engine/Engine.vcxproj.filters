@@ -1,42 +1,93 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <Filter Include="源文件">
-      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
-      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    <Filter Include="src">
+      <UniqueIdentifier>{3a153fd5-cd56-41e6-95cd-bd190b4fed66}</UniqueIdentifier>
     </Filter>
-    <Filter Include="头文件">
-      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
-      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    <Filter Include="src\Engine">
+      <UniqueIdentifier>{c10b7d65-4f41-40e3-89fb-a5343b421b43}</UniqueIdentifier>
     </Filter>
-    <Filter Include="资源文件">
-      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
-      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    <Filter Include="src\Engine\Core">
+      <UniqueIdentifier>{c0afe266-44f5-485f-b4bd-6e32e65fbe38}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Engine\Platform">
+      <UniqueIdentifier>{9e53e30a-c525-4346-be22-66ca7f44294e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Engine\Platform\OpenGL">
+      <UniqueIdentifier>{e0c60ebd-d9e2-4150-9087-050fe7a3e909}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Engine\Platform\windows">
+      <UniqueIdentifier>{819e4ae1-22aa-4c89-ac3c-4328606f1af9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Engine\Renderer">
+      <UniqueIdentifier>{ae1a499e-b499-4bb0-8351-bbcd9887820f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Engine\Core\Events">
+      <UniqueIdentifier>{4fc12a0f-248a-4605-9827-b180755dfdd3}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="src\Engine\Application.cpp">
-      <Filter>源文件</Filter>
+    <ClCompile Include="src\Engine\Core\Application.cpp">
+      <Filter>src\Engine\Core</Filter>
     </ClCompile>
-    <ClCompile Include="src\Engine\Log.cpp">
-      <Filter>源文件</Filter>
+    <ClCompile Include="src\Engine\Core\Log.cpp">
+      <Filter>src\Engine\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Engine\Platform\Windows\WindowsWindow.cpp">
+      <Filter>src\Engine\Platform\windows</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Engine\Renderer\Renderer.cpp">
+      <Filter>src\Engine\Renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Engine\Renderer\RendererContext.cpp">
+      <Filter>src\Engine\Renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Engine\Platform\OpenGL\OpenGLContext.cpp">
+      <Filter>src\Engine\Platform\OpenGL</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="src\Engine\Core\Application.h">
+      <Filter>src\Engine\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Engine\Core\Core.h">
+      <Filter>src\Engine\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Engine\Core\Log.h">
+      <Filter>src\Engine\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Engine\Core\EntryPoint.h">
+      <Filter>src\Engine</Filter>
+    </ClInclude>
     <ClInclude Include="src\Engine.h">
-      <Filter>头文件</Filter>
+      <Filter>src\Engine</Filter>
     </ClInclude>
-    <ClInclude Include="src\Engine\Application.h">
-      <Filter>头文件</Filter>
+    <ClInclude Include="src\Engine\Platform\Windows\WindowsWindow.h">
+      <Filter>src\Engine\Platform\windows</Filter>
     </ClInclude>
-    <ClInclude Include="src\Engine\Core.h">
-      <Filter>头文件</Filter>
+    <ClInclude Include="src\Engine\Core\Ref.h">
+      <Filter>src\Engine\Core</Filter>
     </ClInclude>
-    <ClInclude Include="src\Engine\EntryPoint.h">
-      <Filter>头文件</Filter>
+    <ClInclude Include="src\Engine\Core\Window.h">
+      <Filter>src\Engine\Core</Filter>
     </ClInclude>
-    <ClInclude Include="src\Engine\Log.h">
-      <Filter>头文件</Filter>
+    <ClInclude Include="src\Engine\Core\Assert.h">
+      <Filter>src\Engine\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Engine\Renderer\RendererAPI.h">
+      <Filter>src\Engine\Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Engine\Events\Event.h">
+      <Filter>src\Engine\Core\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Engine\Renderer\RendererContext.h">
+      <Filter>src\Engine\Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Engine\Platform\OpenGL\OpenGLContext.h">
+      <Filter>src\Engine\Platform\OpenGL</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Engine\Events\ApplicationEvent.h">
+      <Filter>src\Engine\Core\Events</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

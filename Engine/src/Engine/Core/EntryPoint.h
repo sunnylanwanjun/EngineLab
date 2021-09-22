@@ -1,7 +1,7 @@
 #pragma once
 #include "Application.h"
 
-#ifdef ENGINE_WINDOWS_PLATFORM
+#ifdef ENGINE_PLATFORM_WINDOWS
 extern Engine::Application* Engine::CreateApplication();
 
 int main(int argc,  char** argv) {

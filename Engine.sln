@@ -7,23 +7,68 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SandBox", "SandBox\SandBox.
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Engine", "Engine\Engine.vcxproj", "{5B3B9CAA-BB93-4A1D-9D35-7510EE3F2C63}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Dependencies", "Dependencies", "{721337E1-8E59-433D-AF9E-7671757D8BCF}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "glfw", "Engine\vendor\GLFW\build\src\glfw.vcxproj", "{9D9C7581-63F4-3B26-A331-79A71EC914E4}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Glad", "Engine\vendor\glad\Glad.vcxproj", "{BDD6857C-A90D-870D-52FA-6C103E10030F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
+		Dist|x64 = Dist|x64
+		MinSizeRel|x64 = MinSizeRel|x64
 		Release|x64 = Release|x64
+		RelWithDebInfo|x64 = RelWithDebInfo|x64
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{6ADCA259-99B8-439B-8C0C-7C0223F5CE0C}.Debug|x64.ActiveCfg = Debug|x64
 		{6ADCA259-99B8-439B-8C0C-7C0223F5CE0C}.Debug|x64.Build.0 = Debug|x64
+		{6ADCA259-99B8-439B-8C0C-7C0223F5CE0C}.Dist|x64.ActiveCfg = Debug|x64
+		{6ADCA259-99B8-439B-8C0C-7C0223F5CE0C}.Dist|x64.Build.0 = Debug|x64
+		{6ADCA259-99B8-439B-8C0C-7C0223F5CE0C}.MinSizeRel|x64.ActiveCfg = Release|x64
+		{6ADCA259-99B8-439B-8C0C-7C0223F5CE0C}.MinSizeRel|x64.Build.0 = Release|x64
 		{6ADCA259-99B8-439B-8C0C-7C0223F5CE0C}.Release|x64.ActiveCfg = Release|x64
 		{6ADCA259-99B8-439B-8C0C-7C0223F5CE0C}.Release|x64.Build.0 = Release|x64
+		{6ADCA259-99B8-439B-8C0C-7C0223F5CE0C}.RelWithDebInfo|x64.ActiveCfg = Release|x64
+		{6ADCA259-99B8-439B-8C0C-7C0223F5CE0C}.RelWithDebInfo|x64.Build.0 = Release|x64
 		{5B3B9CAA-BB93-4A1D-9D35-7510EE3F2C63}.Debug|x64.ActiveCfg = Debug|x64
 		{5B3B9CAA-BB93-4A1D-9D35-7510EE3F2C63}.Debug|x64.Build.0 = Debug|x64
+		{5B3B9CAA-BB93-4A1D-9D35-7510EE3F2C63}.Dist|x64.ActiveCfg = Debug|x64
+		{5B3B9CAA-BB93-4A1D-9D35-7510EE3F2C63}.Dist|x64.Build.0 = Debug|x64
+		{5B3B9CAA-BB93-4A1D-9D35-7510EE3F2C63}.MinSizeRel|x64.ActiveCfg = Release|x64
+		{5B3B9CAA-BB93-4A1D-9D35-7510EE3F2C63}.MinSizeRel|x64.Build.0 = Release|x64
 		{5B3B9CAA-BB93-4A1D-9D35-7510EE3F2C63}.Release|x64.ActiveCfg = Release|x64
 		{5B3B9CAA-BB93-4A1D-9D35-7510EE3F2C63}.Release|x64.Build.0 = Release|x64
+		{5B3B9CAA-BB93-4A1D-9D35-7510EE3F2C63}.RelWithDebInfo|x64.ActiveCfg = Release|x64
+		{5B3B9CAA-BB93-4A1D-9D35-7510EE3F2C63}.RelWithDebInfo|x64.Build.0 = Release|x64
+		{9D9C7581-63F4-3B26-A331-79A71EC914E4}.Debug|x64.ActiveCfg = Debug|x64
+		{9D9C7581-63F4-3B26-A331-79A71EC914E4}.Debug|x64.Build.0 = Debug|x64
+		{9D9C7581-63F4-3B26-A331-79A71EC914E4}.Dist|x64.ActiveCfg = Debug|x64
+		{9D9C7581-63F4-3B26-A331-79A71EC914E4}.Dist|x64.Build.0 = Debug|x64
+		{9D9C7581-63F4-3B26-A331-79A71EC914E4}.MinSizeRel|x64.ActiveCfg = MinSizeRel|x64
+		{9D9C7581-63F4-3B26-A331-79A71EC914E4}.MinSizeRel|x64.Build.0 = MinSizeRel|x64
+		{9D9C7581-63F4-3B26-A331-79A71EC914E4}.Release|x64.ActiveCfg = Release|x64
+		{9D9C7581-63F4-3B26-A331-79A71EC914E4}.Release|x64.Build.0 = Release|x64
+		{9D9C7581-63F4-3B26-A331-79A71EC914E4}.RelWithDebInfo|x64.ActiveCfg = RelWithDebInfo|x64
+		{9D9C7581-63F4-3B26-A331-79A71EC914E4}.RelWithDebInfo|x64.Build.0 = RelWithDebInfo|x64
+		{BDD6857C-A90D-870D-52FA-6C103E10030F}.Debug|x64.ActiveCfg = Debug|x64
+		{BDD6857C-A90D-870D-52FA-6C103E10030F}.Debug|x64.Build.0 = Debug|x64
+		{BDD6857C-A90D-870D-52FA-6C103E10030F}.Dist|x64.ActiveCfg = Dist|x64
+		{BDD6857C-A90D-870D-52FA-6C103E10030F}.Dist|x64.Build.0 = Dist|x64
+		{BDD6857C-A90D-870D-52FA-6C103E10030F}.MinSizeRel|x64.ActiveCfg = Debug|x64
+		{BDD6857C-A90D-870D-52FA-6C103E10030F}.MinSizeRel|x64.Build.0 = Debug|x64
+		{BDD6857C-A90D-870D-52FA-6C103E10030F}.Release|x64.ActiveCfg = Release|x64
+		{BDD6857C-A90D-870D-52FA-6C103E10030F}.Release|x64.Build.0 = Release|x64
+		{BDD6857C-A90D-870D-52FA-6C103E10030F}.RelWithDebInfo|x64.ActiveCfg = Release|x64
+		{BDD6857C-A90D-870D-52FA-6C103E10030F}.RelWithDebInfo|x64.Build.0 = Release|x64
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{9D9C7581-63F4-3B26-A331-79A71EC914E4} = {721337E1-8E59-433D-AF9E-7671757D8BCF}
+		{BDD6857C-A90D-870D-52FA-6C103E10030F} = {721337E1-8E59-433D-AF9E-7671757D8BCF}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {6697ECED-9263-463F-8B07-0DBED3729BB9}

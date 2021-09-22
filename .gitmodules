@@ -4,3 +4,9 @@
 [submodule "Engine/vendor/spdlog"]
 	path = Engine/vendor/spdlog
 	url = git@github.com:gabime/spdlog.git
+[submodule "Engine/vendor/glad"]
+	path = Engine/vendor/glad
+	url = git@github.com:Dav1dde/glad.git
+[submodule "Engine/vendor/glm"]
+	path = Engine/vendor/glm
+	url = git@github.com:g-truc/glm
